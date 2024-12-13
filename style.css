@@ -1,0 +1,148 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for body */
+    color: #fff; /* Make all text white */
+}
+
+/* Header Styles */
+header {
+    background-color: #fff; /* Optional: Add a background color to header */
+    padding: 1rem 0;
+}
+
+header .logo {
+    color: #333;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2rem; /* Optional: Add some space from the left */
+}
+
+header .navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 1rem;
+    color: #333;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #e74c3c; /* Highlight color on hover */
+}
+
+/* Button Styling */
+.btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff009d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
+
+/* Home Section Styling */
+.home {
+    position: relative;
+    background-color: #333; /* Optional background color to match with white text */
+    color: white; /* Ensure text is white */
+    padding: 100px 20px; /* Adds padding inside the section */
+    text-align: center;
+    height: 500px; /* Adjust the height as needed */
+}
+
+.home .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    z-index: 1;
+}
+
+.home .content h3 {
+    font-size: 3rem; /* Size for the heading */
+}
+
+.home .content span {
+    font-size: 1.5rem; /* Size for the subheading */
+}
+
+.home .content p {
+    font-size: 1.2rem; /* Size for the paragraph text */
+}
+
+/* Image Styling */
+.home img {
+    width: 60%; /* Set the image size to 60% of the parent container */
+    height: auto;
+    margin-top: 20px; /* Space between the image and text */
+    border-radius: 8px; /* Optional: add rounded corners */
+    border: 5px solid #000000; /* Border around the image */
+}
+
+/* Footer Styles (if you plan to add a footer) */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer .box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .home-container {
+        padding: 1rem;
+    }
+
+    .home .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .content span {
+        font-size: 1.2rem;
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+
+    /* Make the image smaller on mobile */
+    .home img {
+        width: 80%; /* Reduce the size on smaller screens */
+    }
+}
